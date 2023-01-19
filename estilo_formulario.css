@@ -1,0 +1,76 @@
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: lightslategray;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+
+.fieldset{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border: 2px solid black;
+}
+
+.titulo-fieldset{
+    text-align: center;
+}
+
+.inputs{
+    height: 2em;
+    width: 30em;
+    margin: 5px;
+}
+
+.labels{
+    font-size: 20px;
+}
+
+#lista-cidade{
+    height: 2em;
+    width: 10em;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.label-idade{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.campo-observacao{
+    height: 5em;
+    width: 20em;
+    font-size: 18px;
+}
+
+.botoes{
+    height: 2.5em;
+    width: 10em;
+    border-top-left-radius: 20%;
+    border-left: 5px solid blue;
+    border-bottom-right-radius: 20%;
+    border-right: 5px solid purple;
+    transition: 2s;
+    color: black;
+    font-weight: bold;
+}
+
+.botoes:hover{
+    transition: 2s;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, blue,purple);
+    border-top: 2px solid blue;
+    border-bottom: 2px solid purple;
+}
