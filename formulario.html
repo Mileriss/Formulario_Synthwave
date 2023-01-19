@@ -4,48 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./estilo_formulario.css">
     <title>Formulário</title>
   </head>
   <body>
-    <h1>Formulário Synthwave</h1>
-    <fieldset class="fieldset">
-      <legend class="titulo-fieldset">Formulário</legend>
+    <!-- <h1>Formulário Synthwave</h1> -->
+    <fieldset class="fieldset flex-container">
+      <legend class="titulo-fieldset">Cadastro Cliente</legend>
       <form>
         <div class="formulario">
-          <label class="labels" for="formNome">Nome: </label>
-          <input class="inputs" name="nome" type="text" placeholder="Digite o seu nome..."><br><br>
-          <label class="labels" for="formSobrenome">Sobrenome: </label>
-          <input class="inputs" name="sobrenome" type="text" placeholder="Digite o seu sobrenome..."><br><br>
-          <label class="labels" for="formCPF">CPF: </label>
-          <input class="inputs" name="cpf" type="number" placeholder="XXX.XXX.XXX-XX" pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}\"><br><br>
-          <label class="labels" for="formContato">Contato: </label>
-          <input class="inputs" name="contato" type="number" placeholder="(ddd)9xxxx-xxxx" pattern="\d{2}\.\d{5}\.\{4}\"><br><br>
-          <label class="labels" for="formCidade">Cidade: </label>
-          <select name="cidade" id="lista-cidade">
-            <br><br>
-            <option value="Cidade1">Cidade 1</option>
-            <option value="Cidade2">Cidade 2</option>
-            <option value="Cidade3">Cidade 3</option>
-            <option value="Cidade4">Cidade 4</option>
-            <option value="Cidade5">Cidade 5</option>
-            <option value="Cidade5">Cidade 6</option>
-            <option value="Cidade5">Cidade 7</option>
-            <option value="Cidade5">Cidade 8</option>
-            <option value="Cidade5">Cidade 9</option>
-            <option value="Cidade5">Cidade 10</option>
-          </select><br><br>
-          <label class="labels" for="formIdade">Idade: </label><br>
-          <input class="inputs" name="idade" type="radio">
-          <label class="labels" for="idade1">15-25</label><br>
-          <input class="inputs" name="idade" type="radio">
-          <label class="labels" for="idade1">26-35</label><br>
-          <input class="inputs" name="idade" type="radio">
-          <label class="labels" for="idade1">36-45</label><br>
-          <input class="inputs" name="idade" type="radio">
-          <label class="labels" for="idade1">46-60</label><br><br>
-          <label class="labels" name="observacoes" for="formObservacao">Observações:</label><br>
-          <textarea class="campo-observacao" placeholder="Digite aqui alguma informação adicional..."></textarea><br>
-          <button class="botoes" type="submit" name="enviar">Enviar</button>
+          <div class="nome">
+            <label class="labels" for="formNome">Nome </label><br>
+            <input class="inputs" name="nome" type="text" placeholder="Digite o seu nome..."><br><br>
+          </div>
+          <div class="sobrenome">
+            <label class="labels" for="formSobrenome">Sobrenome </label><br>
+            <input class="inputs" name="sobrenome" type="text" placeholder="Digite o seu sobrenome..."><br><br>
+        </div>
+        <div class="cpf">
+            <label class="labels" for="formCPF">CPF </label><br>
+            <input class="inputs" name="cpf" type="number" placeholder="XXX.XXX.XXX-XX" pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}\"><br><br>
+          </div>
+          <div class="contato">
+            <label class="labels" for="formContato">Contato </label><br>
+            <input class="inputs" name="contato" type="number" placeholder="(ddd)9xxxx-xxxx" pattern="\d{2}\.\d{5}\.\{4}\"><br><br>
+          </div>
+          <div class="cidade">
+            <label class="labels" for="formCidade">Cidade </label>
+            <select name="cidade" id="lista-cidade">
+              <br><br>
+              <option value="Cidade1">Cidade 1</option>
+              <option value="Cidade2">Cidade 2</option>
+              <option value="Cidade3">Cidade 3</option>
+              <option value="Cidade4">Cidade 4</option>
+              <option value="Cidade5">Cidade 5</option>
+              <option value="Cidade5">Cidade 6</option>
+              <option value="Cidade5">Cidade 7</option>
+              <option value="Cidade5">Cidade 8</option>
+              <option value="Cidade5">Cidade 9</option>
+              <option value="Cidade5">Cidade 10</option>
+            </select><br><br>
+          </div>
+          <div class="idade">
+            <label class="labels" for="formIdade">Idade </label><br>
+            <input class="radios" name="idade" type="radio">
+            <label class="label-idade" for="idade1">15-25</label>
+            <input class="radios" name="idade" type="radio">
+            <label class="label-idade" for="idade1">26-35</label>
+            <input class="radios" name="idade" type="radio">
+            <label class="label-idade" for="idade1">36-45</label>
+            <input class="radios" name="idade" type="radio">
+            <label class="label-idade" for="idade1">46-60</label>
+          </div><br>
+          <div class="observacoes">
+            <label class="labels" name="observacoes" for="formObservacao">Observações</label><br>
+            <textarea class="campo-observacao" placeholder="Digite aqui alguma informação adicional..."></textarea><br>
+          </div>
+          <div class="enviar">
+            <button class="botoes" type="submit" name="enviar">Enviar</button>
+          </div>
         </div>
       </form>
     </fieldset>
