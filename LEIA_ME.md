@@ -1,9 +1,8 @@
 # <center style="color: white; border: 2px solid white; border-radius: 30%;background-color: purple;">Formulário Synthwave</center>  
 
 ## **Intuito**  
-Este formulário foi criado para praticar o uso de HTML, CSS e Javascript  
+Este formulário foi criado para praticar o uso de HTML e CSS  
 Mesmo sendo um forulário simples ele terá interações nos campos de preenchimento, labels e botões  
-As funções e métodos DOM serão essenciais para deixar o formulário intuitivo, dinâmico e agradável visualmente  
 
 ## **Campos disponíveis**  
 Os campos disponíveis serão:  
