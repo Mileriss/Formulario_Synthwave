@@ -1,47 +1,71 @@
 h1{
     text-align: center;
+    color: white;
 }
 
 body{
     background-color: black;
 }
 
+/* Fonte utilizada nas Labels */
 @font-face{
     font-family: Cyber-Bold;
     src: url(./Fontes/Cyber-Bold.ttf);
 }
 
+/* Fonte utilizada na idade */
 @font-face{
     font-family: TECHKR__;
     src: url(./Fontes/TECHKR__.TTF);
 }
 
+@font-face{
+    font-family: digital-7;
+    src: url(./Fontes/digital-7.ttf);
+}
+
+
+
 .flex-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
-.fieldset{
+.formulario{
+    border: 2px solid white;
+    text-align: center;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    border-top: 2px solid blue;
-    border-left: 2px solid blueviolet;
-    border-right: 2px solid blue;
-    border-bottom: 2px solid blueviolet;
-
-}
-
-.titulo-fieldset{
-    text-align: center;
 }
 
 .inputs{
-    height: 2em;
-    width: 30em;
+    font-family: digital-7;
+    font-size: 25PX;
+    height: 1.5em;
+    width: 10em;
     margin: 5px;
+    text-align: justify;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    box-shadow: 0 0 5px white;
+}
+
+.inputs:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 10px red, 0 0 15px blue;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+.inputs:focus{
+    box-shadow: 0 0 10px red, 0 0 15px blue;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
 }
 
 .labels{
@@ -62,13 +86,24 @@ body{
     font-size: 50px;
     font-family: TECHKR__;
     color: greenyellow;
+    text-shadow: 0 0 15px rgb(19, 255, 19);
 }
 
 .info-adicional{
     height: 5em;
     width: 20em;
     font-size: 18px;
+    margin: auto;
+    box-shadow: 0 0 5px white;
 }
+.info-adicional:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 10px red, 0 0 15px blue;
+}
+.info-adicional:focus{
+    box-shadow: 0 0 10px red, 0 0 15px blue;
+}
+
 
 .botoes{
     height: 2.5em;
@@ -86,7 +121,7 @@ body{
     transition: 2s;
     color: white;
     font-weight: bold;
-    background-image: linear-gradient(to right, blue,purple);
+    background-image: linear-gradient(to right, blue, lightblue, lightpink,purple);
     border-top: 2px solid blue;
     border-bottom: 2px solid purple;
 }
