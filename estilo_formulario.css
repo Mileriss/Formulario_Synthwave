@@ -1,15 +1,10 @@
-h1{
-    text-align: center;
-    color: white;
-}
-
 body{
     background-color: black;
     /* background-image: url(https://github.com/Mileriss/Canva_imagens/blob/main/Synthwave_Form.png?raw=true); */
-    background-image: url(https://wallpapercrafter.com/th800/149940-digital-art-simple-background-palm-trees-synthwave-artwork.jpg);
-    background-size: auto;
+    background-image: url(https://wallpapercrafter.com/desktop/146293-digital-digital-art-artwork-illustration-Retrowave-vaporwave-synthwave-lines-Sun-sun-rays-sunset-nature-landscape-glowing-colorful-1980s.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: left;
+    
 }
 
 /* Fonte utilizada nas Labels */
@@ -18,16 +13,30 @@ body{
     src: url(./Fontes/Cyber-Bold.ttf);
 }
 
+/* Fonte utilizada nos Inputs */
+@font-face{
+    font-family: digital-7;
+    src: url(./Fontes/digital-7.ttf);
+}
+
 /* Fonte utilizada na idade */
 @font-face{
     font-family: TECHKR__;
     src: url(./Fontes/TECHKR__.TTF);
 }
 
+/* Fonte utilizada nos botões */
 @font-face{
-    font-family: digital-7;
-    src: url(./Fontes/digital-7.ttf);
+    font-family: Cyber-BoldBook;
+    src: url(./Fontes/Cyber-BoldBook.ttf);
 }
+
+/* Fonte utilizada na info. adicional */
+@font-face{
+    font-family: Good-Timing;
+    src: url(./Fontes/Good-Timing.ttf);
+}
+
 
 .flex-container > div{
     display: flex;
@@ -36,9 +45,25 @@ body{
 }
 
 .formulario{
-    border: 2px solid white;
     text-align: center;
     margin: auto;
+}
+
+.fieldset{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: black;
+    box-shadow: 0 0 10px orangered;
+    border-radius: 20%;
+}
+
+.titulo-fieldset{
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px orangered;
+    border-radius: 30%;
+
 }
 
 .inputs{
@@ -92,13 +117,11 @@ body{
     transition: 1s;
     box-shadow: 0 0 10px red, 0 0 15px blue;
     cursor: pointer;
-    border-radius: 10%;
 }
 #lista-cidade:focus{
     transition: 1s;
     box-shadow: 0 0 10px red, 0 0 15px blue;
     cursor: pointer;
-    border-radius: 10%;
 }
 
 .radios{
@@ -114,9 +137,10 @@ body{
 .info-adicional{
     height: 5em;
     width: 20em;
-    font-size: 18px;
+    font-size: 15px;
     margin: auto;
     box-shadow: 0 0 5px whitesmoke;
+    font-family: Good-Timing;
 }
 .info-adicional:hover{
     transition: 0.5s;
@@ -125,7 +149,6 @@ body{
 .info-adicional:focus{
     box-shadow: 0 0 10px red, 0 0 15px blue;
 }
-
 
 .botoes{
     height: 2.5em;
@@ -136,9 +159,22 @@ body{
     border-right: 5px solid purple;
     transition: 2s;
     color: black;
-    font-weight: bold;
+    font-family: Cyber-BoldBook;
 }
 .botoes:hover{
+    transition: 2s;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, blue,purple);
+    border-top: 2px solid blue;
+    border-bottom: 2px solid purple;
+    text-shadow: 0 0 5px whitesmoke;
+    box-shadow: 
+    0 0 5px blue,
+    0 0 10px purple;
+    cursor:pointer;
+}
+.botoes:focus{
     transition: 2s;
     color: white;
     font-weight: bold;
