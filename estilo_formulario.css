@@ -3,8 +3,17 @@ h1{
 }
 
 body{
-    background-color: lightslategray;
+    background-color: black;
+}
 
+@font-face{
+    font-family: Cyber-Bold;
+    src: url(./Fontes/Cyber-Bold.ttf);
+}
+
+@font-face{
+    font-family: TECHKR__;
+    src: url(./Fontes/TECHKR__.TTF);
 }
 
 .flex-container{
@@ -18,7 +27,11 @@ body{
     margin-right: 25%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
-    border: 2px solid black;
+    border-top: 2px solid blue;
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blueviolet;
+
 }
 
 .titulo-fieldset{
@@ -33,6 +46,8 @@ body{
 
 .labels{
     font-size: 20px;
+    font-family: Cyber-Bold;
+    color: white;
 }
 
 #lista-cidade{
@@ -44,11 +59,12 @@ body{
 }
 
 .label-idade{
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 50px;
+    font-family: TECHKR__;
+    color: greenyellow;
 }
 
-.campo-observacao{
+.info-adicional{
     height: 5em;
     width: 20em;
     font-size: 18px;
