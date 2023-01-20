@@ -5,6 +5,11 @@ h1{
 
 body{
     background-color: black;
+    /* background-image: url(https://github.com/Mileriss/Canva_imagens/blob/main/Synthwave_Form.png?raw=true); */
+    background-image: url(https://wallpapercrafter.com/th800/149940-digital-art-simple-background-palm-trees-synthwave-artwork.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 /* Fonte utilizada nas Labels */
@@ -24,9 +29,7 @@ body{
     src: url(./Fontes/digital-7.ttf);
 }
 
-
-
-.flex-container{
+.flex-container > div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -35,8 +38,7 @@ body{
 .formulario{
     border: 2px solid white;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: auto;
 }
 
 .inputs{
@@ -48,20 +50,23 @@ body{
     text-align: justify;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px whitesmoke;
 }
-
 .inputs:hover{
     transition: 0.5s;
-    box-shadow: 0 0 10px red, 0 0 15px blue;
+    box-shadow: 
+    0 0 5px yellow, 
+    0 0 10px purple,
+    0 0 15px blueviolet;
     border-top-left-radius: 0%;
     border-bottom-right-radius: 0%;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
 }
-
 .inputs:focus{
-    box-shadow: 0 0 10px red, 0 0 15px blue;
+    box-shadow: 
+    0 0 10px purple, 
+    0 0 15px blueviolet;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
     border-top-right-radius: 20%;
@@ -80,8 +85,25 @@ body{
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+    box-shadow: 0 0 5px whitesmoke;
+    font-family: digital-7;
+}
+#lista-cidade:hover{
+    transition: 1s;
+    box-shadow: 0 0 10px red, 0 0 15px blue;
+    cursor: pointer;
+    border-radius: 10%;
+}
+#lista-cidade:focus{
+    transition: 1s;
+    box-shadow: 0 0 10px red, 0 0 15px blue;
+    cursor: pointer;
+    border-radius: 10%;
 }
 
+.radios{
+    cursor: pointer;
+}
 .label-idade{
     font-size: 50px;
     font-family: TECHKR__;
@@ -94,7 +116,7 @@ body{
     width: 20em;
     font-size: 18px;
     margin: auto;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px whitesmoke;
 }
 .info-adicional:hover{
     transition: 0.5s;
@@ -116,12 +138,16 @@ body{
     color: black;
     font-weight: bold;
 }
-
 .botoes:hover{
     transition: 2s;
     color: white;
     font-weight: bold;
-    background-image: linear-gradient(to right, blue, lightblue, lightpink,purple);
+    background-image: linear-gradient(to right, blue,purple);
     border-top: 2px solid blue;
     border-bottom: 2px solid purple;
+    text-shadow: 0 0 5px whitesmoke;
+    box-shadow: 
+    0 0 5px blue,
+    0 0 10px purple;
+    cursor:pointer;
 }
