@@ -1,8 +1,8 @@
 body{
     background-color: black;
-    background-image: url(https://github.com/Mileriss/Canva_imagens/blob/main/Synthwave_Form_2.png?raw=true);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: url(https://media.istockphoto.com/id/1194080385/video/4k-video-footage-motion-of-shinny-stars-animation-on-black-background-graphic-motion-overlay.jpg?b=1&s=640x640&k=20&c=Ppv0aeKcWcDIFAWrcodzmYpnjlLndC9UyEr64xs7Y_Q=);
+    background-size: auto;
+    background-repeat: repeat;
     
 }
 
@@ -49,8 +49,9 @@ body{
 }
 
 .fieldset{
-    margin-left: 30%;
-    margin-right: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
     background-color: black;
     box-shadow: 0 0 10px orangered;
     border-radius: 20%;
